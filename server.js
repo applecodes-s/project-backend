@@ -22,8 +22,9 @@ app.use(cors({
 // });
 
 // Routes
-app.use('/api/projects', projectRoutes); // ✅ Don't use .jsx here
+app.use('/api/projects', projectRoutes); 
 app.use('/api/auth', authRoutes);
+
 
 // MongoDB connection
 mongoose.connect('mongodb+srv://priyakeziah:gracepeace@cluster0.k3qa6cg.mongodb.net/projectDB?retryWrites=true&w=majority&appName=Cluster0', {
