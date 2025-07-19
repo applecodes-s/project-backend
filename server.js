@@ -3,7 +3,6 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const projectRoutes = require('./routes/projectRoutes'); // ✅ Make sure this points to the right JS file
-const authRoutes = require('./routes/authRoutes'); 
 dotenv.config();
 
 const app = express();
@@ -23,7 +22,6 @@ app.use(cors({
 
 // Routes
 app.use('/api/projects', projectRoutes); 
-app.use('/api/auth', authRoutes);
 
 
 // MongoDB connection
